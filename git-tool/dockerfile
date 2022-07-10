@@ -1,0 +1,8 @@
+FROM docker.io/alpine:latest
+MAINTAINER Criz
+
+RUN apk add git vim --no-cache \
+ && mkdir git-dir
+
+WORKDIR /git-dir
+CMD ["ash"]
