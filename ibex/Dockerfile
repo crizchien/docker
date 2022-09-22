@@ -1,9 +1,7 @@
 FROM docker.io/python:3.9
 MAINTAINER Criz
 
-RUN export http_proxy=http://10.10.10.190:3128 && \
-    export https_proxy=http://10.10.10.190:3128 && \
-    cd /root && \
+RUN cd /root && \
     git clone https://github.com/lowRISC/ibex.git && \
     cd ibex && \
     apt update && \
