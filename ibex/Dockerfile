@@ -11,7 +11,7 @@ RUN cd /root && \
     wget --no-check-certificate https://github.com/lowRISC/lowrisc-toolchains/releases/download/20220524-1/lowrisc-toolchain-gcc-rv32imcb-20220524-1.tar.xz && \
     tar xfva lowrisc-toolchain-gcc-rv32imcb-20220524-1.tar.xz && \
     export RISCV_TOOLCHAIN=/root/lowrisc-toolchain-gcc-rv32imcb-20220524-1 && \
-    export export RISCV_GCC="$RISCV_TOOLCHAIN/bin/riscv32-unknown-elf-gcc" && \
+    export RISCV_GCC="$RISCV_TOOLCHAIN/bin/riscv32-unknown-elf-gcc" && \
     export RISCV_OBJCOPY="$RISCV_TOOLCHAIN/bin/riscv32-unknown-elf-objcopy" && \
     echo "export PATH=/root/lowrisc-toolchain-gcc-rv32imcb-20220524-1/bin:\$PATH" >> /etc/bash.bashrc && \
     cd ibex  && \
